@@ -1,4 +1,4 @@
-package section8;
+package section8.locksupport;
 
 import java.util.concurrent.locks.LockSupport;
 
@@ -16,10 +16,9 @@ public class LockSupportV1 {
         log("Thread-1 state: " + thread1.getState());
 
         // 1. unpark test
-        /**
         log("main -> unpark(Thread-1)");
         LockSupport.unpark(thread1);
-        */
+
 
         // park() 를 호출하여 스스로 대기상태에 빠질 수 있지만,
         // 대기 상태의 스레드는 자신의 코드를 실행할 수 없기에 unpark() 에는 매개변수 존재한다.

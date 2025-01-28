@@ -1,4 +1,4 @@
-package section8;
+package section8.locksupport;
 
 import java.util.concurrent.locks.LockSupport;
 
